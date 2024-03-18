@@ -28,3 +28,7 @@ listContain.addEventListener("click", function(e){
 function saveData(){
     localStorage.setItem("data", listContain.innerHTML);
 }
+function showTask(){
+    listContain.innerHTML = localStorage.getItem("data");
+}
+showTask();
